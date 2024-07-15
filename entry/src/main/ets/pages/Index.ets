@@ -10,12 +10,12 @@ struct Index {
     Tabs({ barPosition: BarPosition.End }) {
       TabContent() {
         Column({ space: 10 }){
-          Column({ space: 10 }) {
+          Column({ space: 5 }) {
 
 
             Image($rawfile('shunhe.webp'))
               .width(400)
-              .height(330)
+              .height(335)
               .borderRadius({
                 bottomLeft: 100, bottomRight: 100
 
@@ -24,7 +24,7 @@ struct Index {
 
           }
           .justifyContent(FlexAlign.Start)
-          Column({ space: 10 }){
+          Column({ space: 5 }){
             Grid() {
               GridItem({}) {
                 Image($rawfile('dingfang.PNG'))
@@ -53,7 +53,7 @@ struct Index {
 
             Grid() {
               GridItem() {
-                Image($rawfile('dingfang.PNG'))
+                Image($rawfile('yuding.png'))
                   .width(120)
                   .height(100)
                   .borderRadius(10)
@@ -61,7 +61,7 @@ struct Index {
               }
 
               GridItem() {
-                Image($rawfile('tuangou.png'))
+                Image($rawfile('order.png'))
                   .width(120)
                   .height(100)
                   .borderRadius(10)
@@ -69,7 +69,7 @@ struct Index {
               }
 
               GridItem() {
-                Image($rawfile('dingfang.PNG'))
+                Image($rawfile('concat.png'))
                   .width(120)
                   .height(100)
                   .borderRadius(10)
@@ -84,10 +84,16 @@ struct Index {
             .rowsGap(15)
             .height(90)
 
+
+
+
+          }
+          Column({ space: 5 }){
             Grid() {
               GridItem() {
-                Image($rawfile('home_meishi.png'))
-                  .width(100)
+
+                Image($rawfile('meishi.PNG'))
+                  .width(99)
                   .height(100)
                   .objectFit(ImageFit.Fill)
 
@@ -95,8 +101,8 @@ struct Index {
               }
 
               GridItem() {
-                Image($rawfile('home_hotel.png'))
-                  .width(100)
+                Image($rawfile('jituan.PNG'))
+                  .width(99)
                   .height(100)
                   .objectFit(ImageFit.Fill)
 
@@ -104,8 +110,8 @@ struct Index {
               }
 
               GridItem() {
-                Image($rawfile('home_location.png'))
-                  .width(100)
+                Image($rawfile('weizhi.PNG'))
+                  .width(99)
                   .height(100)
                   .objectFit(ImageFit.Fill)
 
@@ -113,8 +119,8 @@ struct Index {
               }
 
               GridItem() {
-                Image($rawfile('home_custom.png'))
-                  .width(100)
+                Image($rawfile('kerenshuo.PNG'))
+                  .width(99)
                   .height(100)
                   .objectFit(ImageFit.Fill)
 
@@ -126,8 +132,6 @@ struct Index {
             .columnsTemplate('1fr 1fr 1fr 1fr')
             .rowsGap(0)
             .height(90)
-
-
 
           }
 
