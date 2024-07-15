@@ -64,7 +64,7 @@ struct Index {
                 backgroundSize: 24,
                 backgroundColor: Color.White,
                 arrowSize: 18,
-                arrowColor: Color.Blue
+                arrowColor: Color.Black
               }, false)
             }
             .width(280)
