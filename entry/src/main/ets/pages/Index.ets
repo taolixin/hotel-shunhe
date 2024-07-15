@@ -10,12 +10,14 @@ struct Index {
     Tabs({ barPosition: BarPosition.End }) {
       TabContent() {
         Column({ space: 10 }){
+
           Column({ space: 5 }) {
 
 
             Image($rawfile('shunhe.webp'))
-              .width(400)
-              .height(335)
+              .width(405)
+              .height(310)
+              .objectFit(ImageFit.Fill)
               .borderRadius({
                 bottomLeft: 100, bottomRight: 100
 
@@ -23,7 +25,60 @@ struct Index {
 
 
           }
-          .justifyContent(FlexAlign.Start)
+          Column({ space: 5 } ){
+
+            Row(){
+              Image($rawfile('gonggao.PNG'))
+              .width(30)
+              .height(20)
+              .objectFit(ImageFit.Fill)
+              Swiper() {
+                Text('“舜和会” 客人礼遇您了解吗1')
+                  .width('90%')
+                  .height('100%')
+                  .backgroundColor(Color.White)
+                  .textAlign(TextAlign.Center)
+                  .fontSize(10)
+
+                Text('舜和会” 客人礼遇您了解吗2')
+                  .width('90%')
+                  .height('100%')
+                  .backgroundColor(Color.White)
+                  .textAlign(TextAlign.Center)
+                  .fontSize(10)
+
+                Text('舜和会” 客人礼遇您了解吗3')
+                  .width('90%')
+                  .height('100%')
+                  .backgroundColor(Color.White)
+                  .textAlign(TextAlign.Center)
+                  .fontSize(10)
+              }
+              .loop(true)
+              .autoPlay(true)
+              .interval(1000)
+              .displayArrow({
+                showBackground: true,
+                isSidebarMiddle: true,
+                backgroundSize: 24,
+                backgroundColor: Color.White,
+                arrowSize: 18,
+                arrowColor: Color.Blue
+              }, false)
+            }
+            .width(280)
+            .height(15)
+            .direction(Direction.Ltr)
+
+
+
+          }.height(15)
+          .width(400)
+
+          .borderRadius(5)
+          .direction(Direction.Ltr)
+
+
           Column({ space: 5 }){
             Grid() {
               GridItem({}) {
