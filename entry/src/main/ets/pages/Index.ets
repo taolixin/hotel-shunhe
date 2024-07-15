@@ -56,7 +56,8 @@ struct Index {
               }
               .loop(true)
               .autoPlay(true)
-              .interval(1000)
+              .interval(1500)
+              .indicator(false)
               .displayArrow({
                 showBackground: true,
                 isSidebarMiddle: true,
