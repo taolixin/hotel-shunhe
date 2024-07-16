@@ -97,7 +97,7 @@ struct Index {
             Grid() {
               GridItem({}) {
                 Image($rawfile('dingfang.PNG'))
-                  .width(180)
+                  .width(170)
                   .height(150)
                   .borderRadius(10)
 
@@ -106,7 +106,7 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('tuangou.png'))
-                  .width(180)
+                  .width(170)
                   .height(150)
                   .borderRadius(10)
 
