@@ -38,21 +38,21 @@ struct Index {
                   .height('100%')
                   .backgroundColor(Color.White)
                   .textAlign(TextAlign.Center)
-                  .fontSize(10)
+                  .fontSize(12)
 
-                Text('舜和会” 客人礼遇您了解吗2')
+                Text('"舜和会” 客人礼遇您了解吗2')
                   .width('90%')
                   .height('100%')
                   .backgroundColor(Color.White)
                   .textAlign(TextAlign.Center)
-                  .fontSize(10)
+                  .fontSize(12)
 
-                Text('舜和会” 客人礼遇您了解吗3')
+                Text('"舜和会” 客人礼遇您了解吗3')
                   .width('90%')
                   .height('100%')
                   .backgroundColor(Color.White)
                   .textAlign(TextAlign.Center)
-                  .fontSize(10)
+                  .fontSize(12)
               }
               .loop(true)
               .autoPlay(true)
@@ -67,21 +67,33 @@ struct Index {
                 arrowColor: Color.Black
               }, false)
             }
-            .width(345)
-            .height(15)
+            .width(350)
+            .height(20)
+            .borderImage({
+              source: {
+                angle: 90,
+                direction: GradientDirection.Left,
+                colors: [[0xAEE1E1, 0.0], [0xD3E0DC, 0.3], [0xFCD1D1, 1.0]]
+              },
+              slice: { top: 8, bottom: 8, left: 8, right: 8 },
+              width: { top: "5px", bottom: "5px", left: "10px", right: "10px" },
+              repeat: RepeatMode.Stretch,
+              fill: false
+            })
 
 
 
 
-          }.height(15)
+
+          }.height(20)
           .width(400)
 
           .borderRadius(5)
           .direction(Direction.Ltr)
-          .borderStyle(BorderStyle.Solid)
 
 
-          Column({ space: 5 }){
+
+          Column(){
             Grid() {
               GridItem({}) {
                 Image($rawfile('dingfang.PNG'))
@@ -105,8 +117,8 @@ struct Index {
             .columnsTemplate('1fr  1fr' )
             .height(180)
 
-            .columnsGap(10)
-            .rowsGap(15)
+            .columnsGap(15)
+            .rowsGap(10)
 
             Grid() {
               GridItem() {
@@ -140,6 +152,7 @@ struct Index {
             .columnsGap(10)
             .rowsGap(15)
             .height(90)
+
 
 
 
@@ -188,9 +201,22 @@ struct Index {
             .rowsTemplate('1fr')
             .columnsTemplate('1fr 1fr 1fr 1fr')
             .rowsGap(0)
-            .height(90)
+            .height(80)
 
           }
+          .borderRadius(10)
+          .borderImage({
+            source: {
+              angle: 90,
+              direction: GradientDirection.Left,
+              colors: [[0xAEE1E1, 0.0], [0xD3E0DC, 0.3], [0xFCD1D1, 1.0]]
+            },
+            slice: { top: 8, bottom: 8, left: 8, right: 8 },
+            width: { top: "10px", bottom: "10px", left: "10px", right: "10px" },
+            repeat: RepeatMode.Stretch,
+            fill: false
+          })
+
 
 
 
@@ -205,6 +231,7 @@ struct Index {
 
       TabContent() {
         Image($rawfile('vip.png'))
+          .height(720)
       }
       .tabBar(this.tabBuilder('会员', 1, $rawfile('vip_select.png'), $rawfile('vip_normal.png')))
 
