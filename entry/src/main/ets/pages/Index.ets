@@ -67,9 +67,9 @@ struct Index {
                 arrowColor: Color.Black
               }, false)
             }
-            .width(280)
+            .width(345)
             .height(15)
-            .direction(Direction.Ltr)
+
 
 
 
@@ -78,6 +78,7 @@ struct Index {
 
           .borderRadius(5)
           .direction(Direction.Ltr)
+          .borderStyle(BorderStyle.Solid)
 
 
           Column({ space: 5 }){
@@ -111,7 +112,7 @@ struct Index {
               GridItem() {
                 Image($rawfile('yuding.png'))
                   .width(120)
-                  .height(100)
+                  .height(90)
                   .borderRadius(10)
 
               }
@@ -119,7 +120,7 @@ struct Index {
               GridItem() {
                 Image($rawfile('order.png'))
                   .width(120)
-                  .height(100)
+                  .height(90)
                   .borderRadius(10)
 
               }
@@ -127,7 +128,7 @@ struct Index {
               GridItem() {
                 Image($rawfile('concat.png'))
                   .width(120)
-                  .height(100)
+                  .height(90)
                   .borderRadius(10)
 
               }
@@ -149,8 +150,8 @@ struct Index {
               GridItem() {
 
                 Image($rawfile('meishi.PNG'))
-                  .width(99)
-                  .height(100)
+                  .width(90)
+                  .height(90)
                   .objectFit(ImageFit.Fill)
 
 
@@ -158,8 +159,8 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('jituan.PNG'))
-                  .width(99)
-                  .height(100)
+                  .width(90)
+                  .height(90)
                   .objectFit(ImageFit.Fill)
 
 
@@ -167,8 +168,8 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('weizhi.PNG'))
-                  .width(99)
-                  .height(100)
+                  .width(90)
+                  .height(90)
                   .objectFit(ImageFit.Fill)
 
 
@@ -176,8 +177,8 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('kerenshuo.PNG'))
-                  .width(99)
-                  .height(100)
+                  .width(90)
+                  .height(90)
                   .objectFit(ImageFit.Fill)
 
               }
@@ -200,9 +201,10 @@ struct Index {
 
       }
       .tabBar(this.tabBuilder('首页', 0, $rawfile('index_select.png'), $rawfile('index_normal.png')))
+      // .backgroundColor(Color.Gray)
 
       TabContent() {
-        Text('推荐的内容').fontSize(30)
+        Image($rawfile('vip.png'))
       }
       .tabBar(this.tabBuilder('会员', 1, $rawfile('vip_select.png'), $rawfile('vip_normal.png')))
 
