@@ -6,7 +6,10 @@ struct Index {
   @State currentIndex: number = 1;
   @State message: string = 'Hello World';
 
+
   build() {
+
+
     Tabs({ barPosition: BarPosition.End }) {
       TabContent() {
         Column({ space: 10 }){
@@ -239,8 +242,63 @@ struct Index {
 
 
       TabContent() {
-        Text('我的内容').fontSize(30)
+
+        Column(){
+         Row({space:20}){
+            Row(){
+              Image($rawfile('tou.PNG'))
+                .width(60)
+                .clip(new Circle({ width: 60, height: 60 }))
+
+            }
+           Row(){
+              Column(){
+                Text('鸡蛋').fontSize(20).fontWeight(600).width(100).height(20).textAlign(TextAlign.Start)
+                Button('V 普通会员').fontColor(Color.White).width(100).height(20).margin(5)
+                  .backgroundColor(Color.Gray)
+              }
+
+
+
+           }
+           Row(){
+
+             Image($rawfile('m.png')).width(25).height(25).margin({right:'5'}).offset({ x: 0, y: -20 })
+             Image($rawfile('kefu.png')).width(25).height(25).offset({ x: 0, y: -20 })
+
+
+
+           }
+           .width(110)
+           .height(60)
+           .justifyContent(FlexAlign.End)
+
+
+
+
+
+          }
+
+          .padding(20)
+          .width(355)
+          .height(100)
+          .borderRadius(10)
+         .backgroundColor(Color.White)
+          .direction(Direction.Ltr)
+
+
+
+
+
+        }.width("100%")
+        .height("100%")
+
+        .backgroundColor(Color.Gray)
+
       }
+      .id( "TabContent3")
+
+
       .tabBar(this.tabBuilder('我的', 2, $rawfile('mine_select.png'), $rawfile('mine_normal.png'))
       )
 
