@@ -123,7 +123,7 @@ struct Index {
             Grid() {
               GridItem() {
                 Image($rawfile('yuding.png'))
-                  .width(120)
+                  .width(110)
                   .height(90)
                   .borderRadius(10)
 
@@ -131,7 +131,7 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('order.png'))
-                  .width(120)
+                  .width(110)
                   .height(90)
                   .borderRadius(10)
 
@@ -139,7 +139,7 @@ struct Index {
 
               GridItem() {
                 Image($rawfile('concat.png'))
-                  .width(120)
+                  .width(110)
                   .height(90)
                   .borderRadius(10)
 
@@ -158,6 +158,7 @@ struct Index {
 
 
           }
+          .width(355)
           Column({ space: 5 }){
             Grid() {
               GridItem() {
@@ -204,6 +205,7 @@ struct Index {
             .height(80)
 
           }
+          .width(355)
           .borderRadius(10)
           .borderImage({
             source: {
@@ -264,4 +266,5 @@ struct Index {
     .justifyContent(FlexAlign.Center)
 
   }
+
 }
