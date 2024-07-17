@@ -270,6 +270,7 @@ struct Index {
            }
            .width(110)
            .height(60)
+
            .justifyContent(FlexAlign.End)
 
 
@@ -281,8 +282,7 @@ struct Index {
           .padding(20)
           .width("100%")
           .height(100)
-          // .borderRadius(10)
-          .backgroundColor(Color.White)
+          .backgroundColor('#e6e6e6')
           .direction(Direction.Ltr)
 
          Column({space:10}){
