@@ -243,7 +243,7 @@ struct Index {
 
       TabContent() {
 
-        Column(){
+        Column({space:20}){
          Row({space:20}){
             Row(){
               Image($rawfile('tou.PNG'))
@@ -253,9 +253,8 @@ struct Index {
             }
            Row(){
               Column(){
-                Text('鸡蛋').fontSize(20).fontWeight(600).width(100).height(20).textAlign(TextAlign.Start)
-                Button('V 普通会员').fontColor(Color.White).width(100).height(20).margin(5)
-                  .backgroundColor(Color.Gray)
+                Text('鸡蛋').fontSize(20).fontWeight(600).width(100).height(20).margin(5).textAlign(TextAlign.Start)
+                Button('V 普通会员').fontColor(Color.White).width(100).height(20).margin(5).backgroundColor(Color.Gray)
               }
 
 
@@ -280,20 +279,92 @@ struct Index {
           }
 
           .padding(20)
-          .width(355)
+          .width("100%")
           .height(100)
-          .borderRadius(10)
-         .backgroundColor(Color.White)
+          // .borderRadius(10)
+          .backgroundColor(Color.White)
           .direction(Direction.Ltr)
 
+         Column({space:10}){
+           Image($rawfile("myvip.PNG")).width(355).height(150).borderRadius(10).objectFit(ImageFit.Fill)
+         }
 
+         Column({space:10}){
+           Row(){
+             Image($rawfile("dingdanguanli.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+             Text('我的订单').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+             Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+           }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10) .backgroundColor(Color.White)
+
+         Column(){
+            Row(){
+              Image($rawfile("zhongjiang.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+              Text('我的中奖').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+            }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10). margin({top: (-17) }) .backgroundColor(Color.White)
+
+         Column(){
+            Row(){
+              Image($rawfile("huiyuanzhangchen.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+              Text('会员章程').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+            }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10) .backgroundColor(Color.White)
+
+         Column(){
+            Row(){
+              Image($rawfile("guanyushunhe.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+              Text('关于舜和').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+            }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10). margin({top: (-17) }) .backgroundColor(Color.White)
+
+         Column(){
+            Row(){
+              Image($rawfile("yinsi.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+              Text('隐私政策').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+            }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10) . margin({top: (-17) }).backgroundColor(Color.White)
+         Column(){
+            Row(){
+              Image($rawfile("shezhi.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
+              Text('账号设置').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
+
+            }
+
+
+         }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10) .backgroundColor(Color.White)
+         Column(){
+            Button("退出登录").fontColor(Color.White).width(350).height(45).margin(5).backgroundColor('#efb336')
+
+
+         }.width(355).height(60).alignItems(HorizontalAlign.Start)
 
 
 
         }.width("100%")
         .height("100%")
 
-        .backgroundColor(Color.Gray)
+        .backgroundColor('#e6e6e6')
 
       }
       .id( "TabContent3")
