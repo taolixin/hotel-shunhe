@@ -1,9 +1,10 @@
 import { CircleShape, EllipseShape, PathShape, RectShape } from '@ohos.arkui.shape';
+import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
 struct Index {
-  @State currentIndex: number = 1;
+  @State currentIndex: number = 0;
   @State message: string = 'Hello World';
 
 
@@ -103,6 +104,9 @@ struct Index {
                   .width(170)
                   .height(150)
                   .borderRadius(10)
+                  .onClick(()=> {
+                    router.pushUrl({ url: "pages/HotelListPage" })
+                  })
 
 
               }.margin(0)
@@ -292,7 +296,7 @@ struct Index {
          Column({space:10}){
            Row(){
              Image($rawfile("dingdanguanli.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-             Text('我的订单').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+             Text('我的订单').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
            }
@@ -303,7 +307,7 @@ struct Index {
          Column(){
             Row(){
               Image($rawfile("zhongjiang.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-              Text('我的中奖').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Text('我的中奖').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
             }
@@ -314,7 +318,7 @@ struct Index {
          Column(){
             Row(){
               Image($rawfile("huiyuanzhangchen.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-              Text('会员章程').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Text('会员章程').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
             }
@@ -325,7 +329,7 @@ struct Index {
          Column(){
             Row(){
               Image($rawfile("guanyushunhe.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-              Text('关于舜和').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Text('关于舜和').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
             }
@@ -336,7 +340,7 @@ struct Index {
          Column(){
             Row(){
               Image($rawfile("yinsi.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-              Text('隐私政策').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Text('隐私政策').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
             }
@@ -346,7 +350,7 @@ struct Index {
          Column(){
             Row(){
               Image($rawfile("shezhi.png")).width(40).height(40).margin(20).borderRadius(10).objectFit(ImageFit.Fill)
-              Text('账号设置').fontSize(20).width(200).height(20).margin(20).textAlign(TextAlign.Start)
+              Text('账号设置').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
             }
@@ -374,8 +378,8 @@ struct Index {
       )
 
     }
-    // .animationDuration(0)
-    // .backgroundColor('#F1F3F5')
+    .animationDuration(0)
+    .backgroundColor('#F1F3F5')
     .onChange((index: number) => {
       this.currentIndex = index
     })
