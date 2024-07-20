@@ -116,6 +116,9 @@ struct Index {
                   .width(170)
                   .height(150)
                   .borderRadius(10)
+                  .onClick(()=> {
+                    router.pushUrl({ url: "pages/HotelListPage" })
+                  })
 
               }
 
@@ -133,6 +136,9 @@ struct Index {
                   .width(110)
                   .height(90)
                   .borderRadius(10)
+                  .onClick(()=> {
+                    router.pushUrl({ url: "pages/HotelListPage" })
+                  })
 
               }
 
@@ -141,6 +147,9 @@ struct Index {
                   .width(110)
                   .height(90)
                   .borderRadius(10)
+                  .onClick(()=> {
+                    router.pushUrl({ url: "pages/HotelListPage" })
+                  })
 
               }
 
@@ -201,6 +210,9 @@ struct Index {
                   .width(90)
                   .height(90)
                   .objectFit(ImageFit.Fill)
+                  .onClick(()=> {
+                    router.pushUrl({ url: "pages/CommentsPage" })
+                  })
 
               }
 

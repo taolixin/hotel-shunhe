@@ -48,7 +48,7 @@ struct HotelListPage {
     Column() {
       // 标题
       Row({ space: 20 }) {
-        Image($r('app.media.icon')).width(30).onClick(() => {
+        Image($r('app.media.logo')).width(30).onClick(() => {
           router.back();
         })
         Text("酒店列表").fontColor('#ff0a0909').fontSize(18)

@@ -2,6 +2,8 @@
   "src": [
     "pages/Index",
     "pages/HotelListPage",
-    "pages/RoomListPage"
+    "pages/RoomListPage",
+    "pages/CommentsPage",
+    "pages/GoCommentsPage"
   ]
 }
