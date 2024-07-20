@@ -257,8 +257,8 @@ struct GoCommentsPage {
       .width("100%")
       Column(){
         Button("提交").width("100%").fontColor(Color.White).width("100%").height(45).margin(5).backgroundColor(Color.Red)
-          .onClick(()=> {
-            router.pushUrl({ url: "pages/Index" })
+          .onClick(() => {
+            router.back();
           })
       }
       .width("100%")
@@ -269,9 +269,7 @@ struct GoCommentsPage {
     .width("100%")
     .height("100%")
     .backgroundColor('#cbe6e6e6')
-    .onClick(() => {
-      router.back();
-    })
+
 
   }
 }
