@@ -4,6 +4,12 @@
     "pages/HotelListPage",
     "pages/RoomListPage",
     "pages/CommentsPage",
-    "pages/GoCommentsPage"
+    "pages/GoCommentsPage",
+    "pages/wode",
+    "pages/OrderList",
+    "pages/BanquetHotelListPage",
+    "pages/BanquetListPage",
+    "pages/DelicacyPage"
+
   ]
 }

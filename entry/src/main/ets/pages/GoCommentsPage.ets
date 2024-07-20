@@ -269,6 +269,9 @@ struct GoCommentsPage {
     .width("100%")
     .height("100%")
     .backgroundColor('#cbe6e6e6')
+    .onClick(() => {
+      router.back();
+    })
 
   }
 }

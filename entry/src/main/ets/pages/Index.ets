@@ -117,7 +117,7 @@ struct Index {
                   .height(150)
                   .borderRadius(10)
                   .onClick(()=> {
-                    router.pushUrl({ url: "pages/HotelListPage" })
+                    router.pushUrl({ url: "pages/DelicacyPage" })
                   })
 
               }
@@ -137,7 +137,7 @@ struct Index {
                   .height(90)
                   .borderRadius(10)
                   .onClick(()=> {
-                    router.pushUrl({ url: "pages/HotelListPage" })
+                    router.pushUrl({ url: "pages/BanquetHotelListPage" })
                   })
 
               }
@@ -148,7 +148,7 @@ struct Index {
                   .height(90)
                   .borderRadius(10)
                   .onClick(()=> {
-                    router.pushUrl({ url: "pages/HotelListPage" })
+                    router.pushUrl({ url: "pages/OrderList" })
                   })
 
               }
@@ -185,7 +185,9 @@ struct Index {
                   .objectFit(ImageFit.Fill)
 
 
-              }
+              }.onClick(()=> {
+                router.pushUrl({ url: "pages/DelicacyPage" })
+              })
 
               GridItem() {
                 Image($rawfile('jituan.PNG'))
@@ -194,7 +196,9 @@ struct Index {
                   .objectFit(ImageFit.Fill)
 
 
-              }
+              }.onClick(()=> {
+                router.pushUrl({ url: "pages/HotelListPage" })
+              })
 
               GridItem() {
                 Image($rawfile('weizhi.PNG'))
@@ -311,7 +315,9 @@ struct Index {
              Text('我的订单').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
              Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
-           }
+           } .onClick(()=> {
+             router.pushUrl({ url: "pages/OrderList" })
+           })
 
 
          }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10) .backgroundColor(Color.White)
@@ -322,7 +328,10 @@ struct Index {
               Text('我的中奖').fontSize(20).width(200).height(20).fontWeight(300).margin(20).textAlign(TextAlign.Start)
               Image($rawfile("black.png")).width(20).height(20).objectFit(ImageFit.Fill)
 
-            }
+
+            } .onClick(()=> {
+              router.pushUrl({ url: "pages/wode" })
+            })
 
 
          }.width(355).height(50).alignItems(HorizontalAlign.Start).borderRadius(10). margin({top: (-17) }) .backgroundColor(Color.White)
